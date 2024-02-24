@@ -1,0 +1,346 @@
+$lightGreen: #b9e7e7;
+.App {
+	.container {
+		padding: 20px;
+		background-color: $lightGreen;
+		margin: 0px 15px;
+
+		.single {
+			display: flex;
+			gap: 50px;
+			margin: 0px 15px;
+			.content {
+				display: flex;
+				flex-direction: column;
+				gap: 30px;
+
+				.img1 {
+					width: 6rem;
+					height: 4rem;
+					background-color: white;
+					// padding: 15px;
+					border-radius: 8px;
+					fill: seagreen;
+				}
+				.user {
+					display: flex;
+					align-items: center;
+					gap: 2px;
+					font-size: 10px;
+					.user-img {
+						width: 40px;
+						height: 40px;
+						background-color: indigo;
+						border-radius: 50%;
+					}
+					.user-name {
+						margin: 0px;
+						padding: 0px;
+						font-size: 12px;
+						font-weight: bold;
+					}
+					.time-stamp {
+						margin: 0px;
+						padding: 0px;
+					}
+					.action {
+						display: flex;
+						gap: 10px;
+						margin: 30px;
+						font-size: 13px;
+						.link1 {
+							height: 20px;
+							width: 20px;
+							color: green;
+							text-decoration: none;
+						}
+
+						.link2 {
+							height: 20px;
+							width: 20px;
+							color: red;
+							text-decoration: none;
+						}
+					}
+				}
+				h1 {
+					font-size: 42px;
+					color: #333;
+				}
+				p {
+					text-align: justify;
+					line-height: 30px;
+				}
+			}
+		}
+		.content {
+			flex: 8;
+		}
+		.menu {
+			flex: 2;
+			display: flex;
+			flex-direction: column;
+			gap: 2px;
+			background-color: whitesmoke;
+			padding: 10px;
+			border-radius: 9px;
+			border: 1px solid black;
+
+			h2 {
+				font-style: 20px;
+				color: #555;
+				font-size: 18px;
+			}
+			.post {
+				display: flex;
+				flex-direction: column;
+				gap: 10px;
+			}
+			.post-image {
+				width: 70px;
+				height: 70px;
+				fill: red;
+			}
+		}
+
+		.auth {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 4px;
+			.link-button {
+				font-size: 15px;
+				width: fit-content;
+				height: fit-content;
+				border-radius: 4px;
+				padding: 5px;
+				color: teal;
+				border: 1px solid teal;
+				background-color: white;
+				margin: 4px;
+
+				&:hover {
+					background-color: teal;
+					color: black;
+					border: 1px solid black;
+				}
+			}
+		}
+		.link {
+			text-decoration: none;
+			color: inherit;
+			margin-left: auto;
+
+			.link-button {
+				font-size: 15px;
+				width: fit-content;
+				height: fit-content;
+				border-radius: 4px;
+				padding: 5px;
+				color: teal;
+				border: 1px solid teal;
+				background-color: white;
+				margin: 4px;
+
+				&:hover {
+					background-color: teal;
+					color: black;
+					border: 1px solid black;
+				}
+			}
+		}
+		h1 {
+			font-size: 20px;
+			color: teal;
+			margin-bottom: 20px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			padding: 50px;
+			background-color: white;
+			border-radius: 10px;
+			gap: 20px;
+			width: 200px;
+
+			.link-button {
+				font-size: 15px;
+				width: fit-content;
+				height: fit-content;
+				border-radius: 4px;
+				padding: 5px;
+				color: teal;
+				border: 1px solid teal;
+				background-color: white;
+				margin: 4px;
+
+				&:hover {
+					background-color: teal;
+					color: black;
+					border: 1px solid black;
+				}
+			}
+		}
+		input {
+			padding: 10px;
+			border: none;
+			border-bottom: 1px solid grey;
+		}
+		// button {
+		// 	padding: 10px;
+		// 	border: none;
+		// 	background-color: teal;
+		// 	color: white;
+		// 	cursor: pointer;
+		// 	width: fit-content;
+		// }
+		span {
+			font-size: 15px;
+			text-align: center;
+		}
+		.error {
+			font-size: 12px;
+			color: red;
+		}
+	}
+	.navbar {
+		.container {
+			padding: 4px 70px 10px 70px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			// width: 80%;
+			margin: 0px 15px;
+			.logo {
+				fill: snow;
+				background-color: black;
+				border-radius: 50%;
+				width: 70px;
+				height: 80px;
+			}
+
+			.links-container {
+				display: flex;
+				margin-left: auto;
+				gap: 10px;
+				// margin: 0px 15px;
+			}
+			.create-post-button {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 6px;
+				color: black;
+				background-color: white;
+				border: 1px solid teal;
+				padding: 3px;
+				// width: 100%;
+				// height: min-content;
+				&:hover {
+					color: black;
+					background-color: teal;
+				}
+			}
+		}
+		.home {
+			.posts {
+				margin-top: 4px;
+				display: flex;
+				flex-direction: column;
+				text-align: justify;
+			}
+			.post {
+				display: flex;
+				gap: 80px;
+				text-align: justify;
+			}
+		}
+	}
+	.post-image {
+		width: 120px;
+		height: 120px;
+		fill: red;
+		margin-right: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		float: left;
+	}
+	.footer {
+		font-size: 24px;
+		font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+			"Lucida Sans", Arial, sans-serif;
+		font-style: italic;
+		font-weight: bold;
+		color: black;
+		position: inherit;
+		display: flex;
+		margin-top: 2px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-color: $lightGreen;
+		// width: 90%;
+		margin: 2px 15px;
+
+		.footer-img {
+			width: 26px;
+			height: 25px;
+			fill: red;
+
+			background-color: white;
+			border: 1px solid teal;
+			border-radius: 5px;
+			margin-right: 12px;
+		}
+		.hearth-logo {
+			fill: red;
+		}
+	}
+	.create-post {
+		margin-top: 20px;
+		display: flex;
+		// flex-direction: column;
+		gap: 20px;
+
+		.content {
+			flex: 5;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+
+			input {
+				padding: 10px;
+				border: 1px solid lightgray;
+			}
+			.editorContainer {
+				height: 300px;
+				overflow: scroll;
+				border: 1px solid lightgray;
+
+				.quill-editor {
+					border: none;
+					height: 100%;
+				}
+			}
+		}
+		.menu {
+			flex: 2;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			background-color: $lightGreen;
+			border: none;
+
+			.item {
+				border: 1px solid lightgray;
+				padding: 10px;
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+			}
+		}
+	}
+}
